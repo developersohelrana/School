@@ -69,12 +69,25 @@
                 </li>
 
               </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+           
+              <div class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0" id="searchForm">
                 <div class="menu-input">
-                  <input type="text" name="" id="" placeholder="Search your name">
+                  <input type="text" class="form-control mr-sm-2" id="searchInput" placeholder="Search your name">
                 </div>
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchBtn" data-toggle="modal" data-target="#exampleModalCenter" >Search</button>
+              </div>
+              <!-- model section ---------- -->
+              <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
             </div>
         </nav>
       </div>
@@ -371,11 +384,20 @@
     </div>
   </section>
 
-<!-- admission section -->
-
-
-
-
+   <!--Section for modal  -------------------->
+   <section>
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div id="modal-content" class="modal-content border-0"></div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- footer section -->
@@ -416,6 +438,7 @@
   <!-- google map js -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
   </script>
+    <script src="./js/model.js" defer></script>
   <!-- end google map js -->
 </body>
 
